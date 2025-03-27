@@ -1,144 +1,64 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script defer src="script.js"></script>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Experience</a></li>
+            <li><a href="#freelancing">Freelancing</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
     <header>
-        <div class="container">
-            <h1>My Portfolio</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1>Welcome to My Portfolio</h1>
+        <p>Showcasing my work and experience</p>
     </header>
 
-    <section id="about" class="section">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>I'm a passionate Full Stack Developer with expertise in Java, Spring Boot, JavaScript, JSP, SQL, and more.</p>
-        </div>
-    </section>
-
-    <section id="projects" class="section">
-        <div class="container">
-            <h2>Projects</h2>
-
-            <div class="project">
-                <h3>Water Bill Management (WBM)</h3>
-                <p>Implemented bill generation and company details correction, ensuring accurate water bill processing.</p>
-            </div>
-
-            <div class="project">
-                <h3>Industry Management System (IMS)</h3>
-                <p>Corrected lease rent bills, settled payments, and ensured accuracy in bill modifications.</p>
-            </div>
-
-            <div class="project">
-                <h3>Indian Industrial Land Bank (IILB)</h3>
-                <p>Developed modules for data retrieval, invoice generation, and enhanced UI for improved visibility.</p>
-            </div>
-
-            <div class="project">
-                <h3>SWS (Single Window System)</h3>
-                <p>Created the Grievance Approval module, handled UI corrections, and managed backend permissions.</p>
-            </div>
-
-            <div class="project">
-                <h3>Invest MP</h3>
-                <p>Optimized backend code, improved data retrieval performance, and enhanced user experience.</p>
-            </div>
-
-        </div>
-    </section>
-
-    <section id="contact" class="section">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:reeshu@example.com">reeshu@example.com</a></p>
-            <p>Mobile: <a href="tel:+919876543210">+91 98765 43210</a></p>
-
-            <div class="social-links">
-                <a href="https://github.com/ReeshuShivhare" target="_blank">
-                    <i class="fab fa-github"></i> GitHub
-                </a>
-                <a href="https://www.linkedin.com/in/reeshu-shivhare" target="_blank">
-                    <i class="fab fa-linkedin"></i> LinkedIn
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 My Portfolio. All rights reserved.</p>
-        </div>
-    </footer>
-
-</body>
-</html> -->
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Your Name</h1>
-        <p>Java Full Stack Developer</p>
-    </header>
-    
     <section id="about">
-        <img src="https://media.licdn.com/dms/image/v2/D4D22AQFsMopWqRh-hw/feedshare-shrink_800/B4DZVCwr7oG8Ak-/0/1740581815467?e=1746057600&v=beta&t=1vuKFdQLSNqDyw21vwS0eAtknAUq_S2LQ_cl6gnGCa0
-        " alt="Profile Picture">
-        <p>Welcome to my portfolio! I specialize in Java, Spring Boot, JavaScript, and more.</p>
+        <h2>About Me</h2>
+        <img src="profile.jpg" alt="Profile Picture">
+        <p>Experienced Full Stack Developer with expertise in Java, Spring Boot, JavaScript, and more.</p>
     </section>
-    
+
     <section id="projects">
         <h2>Experienced Projects</h2>
         <div class="project">
-            <img src="//invest.mp.gov.in/wp-content/uploads/2025/03/Artboard-1_2@2x-100-50x100.jpg" alt="Project 1">
-            <h3>Project Name 1</h3>
-            <p>Description of the project and your role in it.</p>
-        </div>
-        <div class="project">
-            <img src="project2.jpg" alt="Project 2">
-            <h3>Project Name 2</h3>
-            <p>Description of the project and your role in it.</p>
+            <img src="project1.jpg" alt="Project 1">
+            <h3>Project Name</h3>
+            <p>Details about this project...</p>
         </div>
     </section>
-    
+
     <section id="freelancing">
         <h2>Freelancing Projects</h2>
         <div class="project">
-            <img src="freelance1.jpg" alt="Freelance Project 1">
-            <h3>Freelance Project 1</h3>
-            <p>Description of the project and technologies used.</p>
-        </div>
-        <div class="project">
-            <img src="freelance2.jpg" alt="Freelance Project 2">
-            <h3>Freelance Project 2</h3>
-            <p>Description of the project and technologies used.</p>
+            <img src="freelance1.jpg" alt="Freelance Project">
+            <h3>Freelance Work</h3>
+            <p>Details about this work...</p>
         </div>
     </section>
-    
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
     <footer>
-        <p>Contact: your.email@example.com</p>
+        <p>Connect with me:</p>
+        <a href="#">LinkedIn</a> | <a href="#">GitHub</a>
     </footer>
 </body>
 </html>

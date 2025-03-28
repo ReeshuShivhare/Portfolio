@@ -9,11 +9,11 @@
 </head>
 <body>
     <nav>
-        <div class="menu-toggle" id="mobile-menu">
+        <!-- <div class="menu-toggle" id="mobile-menu">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
-        </div>
+        </div> -->
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Experience</a></li>
@@ -29,29 +29,39 @@
         <p>Showcasing my work and experience</p>
     </header>
     
-    <section id="about" class="fade-in">
+    <section id="about" class="fade-in" style="background-color: blue;">
         <h2>About Me</h2>
         <img src="profile.jpg" alt="Profile Picture">
         <p>Experienced Full Stack Developer with expertise in Java, Spring Boot, JavaScript, and more.</p>
     </section>
     
-    <section id="projects">
+    <section id="projects" style="background-color: gold;">
         <h2>Experienced Projects</h2>
         <div class="project">
             <img src="project1.jpg" alt="Project 1">
             <h3>Project Name</h3>
             <p>Details about this project...</p>
-            <button class="view-project-btn" onclick="window.open('https://yourprojectlink.com', '_blank')">View Project</button>
+            <button class="view-project-btn" onclick="window.open('https://yourprojectlink.com', '_blank')">View Project</button> &nbsp;
+            <button class="view-project-btn" onclick="window.open('https://yourprojectlink.com', '_blank')">About us</button>
+
         </div>
     </section>
     
-    <section id="freelancing" class="fade-in">
+    <section id="freelancing" class="fade-in" style="background-color: cyan;">
         <h2>Freelancing Projects</h2>
         <div class="project">
             <img src="freelance1.jpg" alt="Freelance Project">
             <h3>Freelance Work</h3>
             <p>Details about this work...</p>
-            <button class="view-project-btn" onclick="window.open('https://yourprojectlink.com', '_blank')">View Project</button>
+            <button class="view-project-btn" onclick="window.open('https://yourprojectlink.com', '_blank')">View Project</button>&nbsp;
+            <button class="view-project-btn" onclick="window.open('https://yourprojectlink.com', '_blank')">About us</button>
+        </div>
+        <div class="project">
+            <img src="freelance1.jpg" alt="Freelance Project">
+            <h3>Freelance Work</h3>
+            <p>Details about this work...</p>
+            <button class="view-project-btn" onclick="window.open('https://yourprojectlink.com', '_blank')">View Project</button>&nbsp;
+            <button class="view-project-btn" onclick="window.open('https://yourprojectlink.com', '_blank')">About us</button>
         </div>
     </section>
     
@@ -64,12 +74,16 @@
                     <p>⭐⭐⭐⭐⭐</p>
                     <p>"Excellent work! Delivered on time and exceeded expectations."</p>
                     <h4>- Client Name</h4>
+                    <button class="view-project-btn" onclick="window.open('https://yourprojectlink.com', '_blank')">View Project</button> &nbsp;&nbsp;
+                    <button class="view-project-btn" onclick="window.open('https://yourprojectlink.com', '_blank')">About us</button>
                 </div>
                 <div class="review">
                     <img src="client2_project.jpg" alt="Client Project 2">
                     <p>⭐⭐⭐⭐⭐</p>
                     <p>"Very skilled. Will hire again for future projects."</p>
                     <h4>- Client Name</h4>
+                    <button class="view-project-btn" onclick="window.open('https://yourprojectlink.com', '_blank')">View Project</button> &nbsp;&nbsp;
+                    <button class="view-project-btn" onclick="window.open('https://yourprojectlink.com', '_blank')">About us</button>
                 </div>
             </div>
         </div>
@@ -80,101 +94,11 @@
         <p id="email-display" style="display: none; font-weight: bold;">reeshushivhare@gmail.com</p>
     </section>
     
-    <footer>
-        <p>Connect with me:</p>
-        <a href="your_resume.pdf" download class="btn">Download Resume</a>
-        <a href="https://github.com/yourprofile" target="_blank">GitHub</a>
+    <footer style="background-color: dimgray;">
+        <p><b>Connect with me:</b></p>
+        <a href="your_resume.pdf" download class="btn">Download Resume</a> &nbsp;
+        <a href="https://github.com/yourprofile" target="_blank">GitHub</a> &nbsp;
         <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
     </footer>
 </body>
 </html>
-
-
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-</head>
-<body>
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Experience</a></li>
-            <li><a href="#freelancing">Freelancing</a></li>
-            <li><a href="#reviews">Client Reviews</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><button id="dark-mode-toggle">🌙</button></li>
-        </ul>
-    </nav>
-    
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-        <p>Showcasing my work and experience</p>
-    </header>
-    
-    <section id="about" class="fade-in">
-        <h2>About Me</h2>
-        <img src="profile.jpg" alt="Profile Picture">
-        <p>Experienced Full Stack Developer with expertise in Java, Spring Boot, JavaScript, and more.</p>
-    </section>
-    
-    <section id="projects">
-        <h2>Experienced Projects</h2>
-        <div class="project">
-            <img src="project1.jpg" alt="Project 1">
-            <h3>Project Name</h3>
-            <p>Details about this project...</p>
-            <a href="https://project1.com" target="_blank" class="btn">View Project</a> &nbsp; &nbsp;
-<button class="view-project-btn" onclick="window.open('https://yourprojectlink.com', '_blank')">View Project </button>
-        </div>
-    </section>
-    
-    <section id="freelancing" class="fade-in">
-        <h2>Freelancing Projects</h2>
-        <div class="project">
-            <img src="freelance1.jpg" alt="Freelance Project">
-            <h3>Freelance Work</h3>
-            <p>Details about this work...</p>
-            <a href="https://project1.com" target="_blank" class="btn">View Project</a>&nbsp; &nbsp;
-            <button class="view-project-btn" onclick="window.open('https://yourprojectlink.com', '_blank')">View Project </button>
-        </div>
-    </section>
-    
-    <section id="reviews" class="fade-in">
-        <h2>Client Reviews</h2>
-        <div class="reviews-container">
-            <div class="reviews-slider">
-                <div class="review">
-                    <img src="client1_project.jpg" alt="Client Project 1">
-                    <p>⭐⭐⭐⭐⭐</p>
-                    <p>"Excellent work! Delivered on time and exceeded expectations."</p>
-                    <h4>- Client Name</h4>
-                </div>
-                <div class="review">
-                    <img src="client2_project.jpg" alt="Client Project 2">
-                    <p>⭐⭐⭐⭐⭐</p>
-                    <p>"Very skilled. Will hire again for future projects."</p>
-                    <h4>- Client Name</h4>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section id="contact" class="fade-in">
-        <button id="contact-btn">Contact Me</button>
-        <p id="email-display" style="display: none; font-weight: bold;">reeshushivhare@gmail.com</p>
-    </section>
-    
-    <footer>
-        <p>Connect with me:</p>
-        <a href="your_resume.pdf" download class="btn">Download Resume</a>
-        <a href="https://github.com/yourprofile" target="_blank">GitHub</a>
-        <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-    </footer>
-</body>
-</html> -->

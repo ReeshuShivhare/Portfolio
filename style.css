@@ -2,7 +2,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
-    padding-top: 60px;
+    padding-top: 15px;
     background: url('background.jpg') fixed;
     text-align: center;
     transition: background 0.3s ease-in-out;
@@ -79,11 +79,12 @@ nav ul li a,
 
 /* Header */
 header {
-    padding: 80px 10px;
+    padding: 50cap 10px;
     background: linear-gradient(45deg, #1565c0, #0d47a1);
     color: white;
     text-align: center;
-    padding: 50px 10px;
+    padding: 50px 0px;
+    margin-bottom: 10px;
 
     display: block !important;
     visibility: visible !important;
@@ -164,8 +165,8 @@ section {
 
 /* Footer */
 footer {
-    background: #1565c0;
-    color: white;
+    background: #68d2db;
+    color: rgb(249, 247, 248);
     padding: 20px;
 }
 
@@ -181,7 +182,7 @@ footer {
     width: 300px;
     margin: 20px;
     padding: 15px;
-    background: white;
+    background: rgb(30, 197, 47);
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s;

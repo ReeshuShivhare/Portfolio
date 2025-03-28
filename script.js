@@ -76,4 +76,9 @@ document.addEventListener("DOMContentLoaded", function () {
         reviewsSlider.addEventListener("mouseenter", () => isPaused = true);
         reviewsSlider.addEventListener("mouseleave", () => isPaused = false);
     }
+    document.getElementById("resume-btn").addEventListener("click", function () {
+        // Open Resume in a New Tab
+        window.open("your-resume.pdf", "_blank");
+    });
+    
 });

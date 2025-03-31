@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
         textElements.forEach(element => {
             if (enable) {
                 element.style.color = "white";
-                element.style.backgroundColor = "#121212"; // Optional for better contrast
+                element.style.backgroundColor = "#121212"; 
             } else {
                 element.style.color = "";
                 element.style.backgroundColor = "";
@@ -15,7 +15,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Dark Mode Toggle
     if (darkModeToggle) {
         darkModeToggle.addEventListener("click", function () {
             document.body.classList.toggle("dark-mode");
@@ -27,13 +26,11 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Load Dark Mode Preference on Page Load
     if (localStorage.getItem("darkMode") === "enabled") {
         document.body.classList.add("dark-mode");
         applyDarkModeStyles(true);
     }
 
-    // Smooth Scrolling for Navigation
     document.querySelectorAll("nav ul li a").forEach(anchor => {
         anchor.addEventListener("click", function (event) {
             let targetElement = document.querySelector(this.getAttribute("href"));
@@ -44,7 +41,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // Contact Me Button Toggle
     const contactBtn = document.getElementById("contact-btn");
     const emailDisplay = document.getElementById("email-display");
     if (contactBtn && emailDisplay) {
@@ -53,7 +49,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Auto-Scrolling Testimonials
     const reviewsSlider = document.querySelector(".reviews-slider");
     if (reviewsSlider) {
         let isPaused = false;
@@ -72,12 +67,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
         let reviewInterval = setInterval(scrollReviews, 4000);
 
-        // Pause on Hover
         reviewsSlider.addEventListener("mouseenter", () => isPaused = true);
         reviewsSlider.addEventListener("mouseleave", () => isPaused = false);
     }
     document.getElementById("resume-btn").addEventListener("click", function () {
-        // Open Resume in a New Tab
         window.open("your-resume.pdf", "_blank");
     });
     
